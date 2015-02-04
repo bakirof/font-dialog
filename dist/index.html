@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Font-dialog</title>
+  <link href='http://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,400,300,600,700&subset=latin,cyrillic' rel='stylesheet' type='text/css'>
+  <!-- Bootstrap -->
+  <link href="css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="style.css"/>
+
+  <link href="src/css/docs.css" rel="stylesheet">
+  <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+  <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+  <!--[if lt IE 9]>
+  <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+  <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+  <![endif]-->
+</head>
+<body>
+<div class="container">
+  <div class="row">
+    <button type="button" id = "buttn" class="btn btn-primary btn-lg" data-toggle="modal" data-target="#myModal">
+      Font-dialog
+    </button>
+
+    <!-- Modal -->
+    <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span
+              aria-hidden="true">&times;</span></button>
+            <h4 class="modal-title" id="myModalLabel">Font-dialog</h4>
+          </div>
+          <div class="modal-body">
+
+            <div role="tabpanel">
+
+              <!-- Nav tabs -->
+              <ul class="nav nav-tabs" role="tablist">
+                <li role="presentation" class="active"><a href="#home" aria-controls="home" role="tab"
+                                                          data-toggle="tab">Font</a></li>
+                <li role="presentation"><a href="#profile" aria-controls="profile" role="tab"
+                                           data-toggle="tab">Advanced</a></li>
+
+              </ul>
+
+              <!-- Tab panes -->
+              <div class="tab-content">
+                <div role="tabpanel" class="tab-pane active" id="home">
+                  <div class="container-fluid" id="dialog">
+
+                    <div class="row">
+                      <div class="col-xs-6">Font<br>
+                        <input type="text" class="form-control" id="font">
+                        <select multiple class="form-control font" id="sel">
+                          <option>Sans-serif</option>
+                          <option>Verdana</option>
+                          <option>Open Sans</option>
+                          <option>4</option>
+                          <option>5</option>
+                        </select>
+                      </div>
+                      <div class="col-xs-4">Font style
+                        <input type="text" class="form-control" id="font-style">
+                        <select multiple class="form-control font-style" id="sel">
+                          <option data-val1="font-weight" data-val2="400" data-val3="font-style" data-val4="normal">Regular</option>
+                          <option data-val1="font-weight" data-val2="400" data-val3="font-style" data-val4="italic">Italic</option>
+                          <option data-val1="font-weight" data-val2="700" data-val3="font-style" data-val4="normal">Bold</option>
+                          <option data-val1="font-weight" data-val2="700" data-val3="font-style" data-val4="italic">Bold italic</option>
+                        </select>
+                      </div>
+                      <div class="col-xs-2">Size
+                        <input type="text" class="form-control" id="font-size">
+                        <select multiple class="form-control font-size" id="sel">
+                          <option>20</option>
+                          <option>24</option>
+                          <option>30</option>
+                          <option>32</option>
+                          <option>29</option>
+                        </select>
+
+                      </div>
+
+                    </div>
+                    <div class="row">
+                      <div class="col-xs-4" id="sel">
+                        Font color
+                        <select class="form-control">
+                          <option>1</option>
+                          <option>2</option>
+                          <option>3</option>
+                          <option>4</option>
+                          <option>5</option>
+                        </select>
+                      </div>
+                      <div class="col-xs-4" id="sel">
+                        Underline style
+                        <select class="form-control">
+                          <option>1</option>
+                          <option>2</option>
+                          <option>3</option>
+                          <option>4</option>
+                          <option>5</option>
+                        </select>
+                      </div>
+                      <div class="col-xs-4" id="sel">
+                        Underline color
+                        <select class="form-control">
+                          <option>1</option>
+                          <option>2</option>
+                          <option>3</option>
+                          <option>4</option>
+                          <option>5</option>
+                        </select>
+                      </div>
+                    </div>
+                    <div class="col-xs-12" id="sel">
+                      Effects<br>
+
+                      <div class="col-xs-6">
+                        <div class="checkbox">
+                          <label>
+                            <input type="checkbox" id="Strikethrowgh" value="option1" aria-label="Strikethrowgh">
+                            Strikethrowgh
+                          </label>
+                        </div>
+                        <div class="checkbox">
+                          <label>
+                            <input type="checkbox" id="Double-strikethrowgh" value="option1" aria-label="Double-strikethrowgh">
+                            Double strikethrowgh
+                          </label>
+                        </div>
+                        <div class="checkbox">
+                          <label>
+                            <input type="checkbox" id="Super-script" value="option1" aria-label="Super-script">
+                            Super script
+                          </label>
+                        </div>
+                        <div class="checkbox">
+                          <label>
+                            <input type="checkbox" id="Subscrip" value="option1" aria-label="Subscript">
+                            Subscript
+                          </label>
+                        </div>
+
+                      </div>
+                      <div class="col-xs-6">
+                        <div class="checkbox">
+                          <label>
+                            <input type="checkbox" id="Small-caps" value="option1" aria-label="Small-caps">
+                            Small caps
+                          </label>
+                        </div>
+                        <div class="checkbox">
+                          <label>
+                            <input type="checkbox" id="All-caps" value="option1" aria-label="All-caps">
+                            All caps
+                          </label>
+                        </div>
+                        <div class="checkbox">
+                          <label>
+                            <input type="checkbox" id="Hidden" value="option1" aria-label="Hidden">
+                            Hidden
+                          </label>
+                        </div>
+                      </div>
+
+                    </div>
+                    <div class="col-xs-12">
+                      Preview<br>
+                      <div class="col-xs-12" id="lists">
+                        lists
+                      </div>
+                    </div>
+
+                  </div>
+
+                </div>
+                <div role="tabpanel" class="tab-pane fade" id="profile">advanced</div>
+
+              </div>
+
+            </div>
+
+
+          </div>
+          <div class="modal-footer">
+            <button type="button" id ="ok" class="btn btn-primary">Ok</button>
+            <button type="button" class="btn btn-default" data-dismiss="modal">Cancel</button>
+
+          </div>
+        </div>
+      </div>
+    </div>
+
+  </div>
+</div>
+
+<!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+<script src="script.js"></script>
+
+<!-- Include all compiled plugins (below), or include individual files as needed -->
+<script src="js/bootstrap.min.js"></script>
+</body>
+</html>
