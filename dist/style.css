@@ -20,8 +20,27 @@ html, body {
 #lists{
   text-align: center;
   height: 70px;
-
+  z-index: 2;
   line-height: 70px;
   border:1px solid #c2c2c2;
   border-radius: 5px;
+}
+.lists2{
+  border:1px solid black;
+  display:none;
+  position:relative;
+  left:-28px;
+  top:3px;
+  text-decoration: line-through;
+  color:white;
+  z-index: 1;
+}
+.css{
+  width:350px;
+
+  border:2px solid blueviolet;
+  padding:20px;
+  margin-top:20px;
+  color:blueviolet;
+  font-size: 20px;
 }
